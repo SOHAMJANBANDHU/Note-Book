@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class SwappingWithout 
+{
+	public static void main(String[] args) 
+	{
+		Scanner Swap = new Scanner(System.in);
+		
+		System.out.print("Enter First Number: ");
+		int a = Swap.nextInt();
+
+		System.out.print("Enter Second Number: ");
+		int b = Swap.nextInt();
+		
+		b = a+b;
+		a = b-a;
+		b = b-a;
+		System.out.println("After Swapping: "+a+" "+" "+b);
+	}
+}
